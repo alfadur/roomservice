@@ -1627,7 +1627,7 @@ var LD37 = function (_, Kotlin) {
     this.tableTexture = PIXI.Texture.fromImage('images/table.png', false);
     this.itemsBase = PIXI.BaseTexture.fromImage('images/items.png', false);
     this.itemTextures = slice(this.itemsBase, [100, 100, 100]);
-    this.charactersBase = PIXI.BaseTexture.fromImage('images/characters.png', false);
+    this.charactersBase = document.getElementById('hc') != null ? PIXI.BaseTexture.fromImage('images/charactershc.png', false) : PIXI.BaseTexture.fromImage('images/characters.png', false);
     this.characterTextures = slice_0(this.charactersBase, new PIXI.Point(100, 162), 3, 4);
   }
   LevelResources.$metadata$ = {
